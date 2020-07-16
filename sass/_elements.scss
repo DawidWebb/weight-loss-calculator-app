@@ -1,1 +1,41 @@
+@import "./variables";
 
+.setup,
+.calebdar {
+  width: 100%S;
+  height: 20vh;
+  margin: 30px auto;
+}
+.setup__initial,
+.setup__desired,
+.setup__height {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.setup__title {
+  display: block;
+  flex-basis: 100%;
+}
+.setup__input {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.setup__value {
+  width: 20px;
+  margin-left: 10px;
+}
+.calendar__title {
+  margin-bottom: 10px;
+}
+.calendar__date {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 2px 20px;
+  font-family: $main-ff;
+  font-size: $main-fz/1.5;
+  color: black;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 4px;
+}
