@@ -24,19 +24,20 @@
             step="1"
             value="80"
           />
-          <p class="setup__value">114kg</p>
+          <p class="setup__value setup__value--initial">114kg</p>
         </div>
         <div class="setup__desired">
           <p class="setup__title">Desired weight</p>
           <input
+          type="range"
+          value="80"
             class="setup__input setup__input--desired"
-            type="range"
             min="1"
             max="160"
             step="1"
-            value="80"
+            
           />
-          <p class="setup__value">95kg</p>
+          <p class="setup__value setup__value--desired">95kg</p>
         </div>
         <div class="setup__height">
           <p class="setup__title">Height</p>
@@ -48,7 +49,7 @@
             step="1"
             value="80"
           />
-          <p class="setup__value">184cm</p>
+          <p class="setup__value setup__value--height">184cm</p>
         </div>
       </div>
       <div class="calendar container__calendar">
@@ -76,5 +77,6 @@
       <button class="container__button">Count</button>
       <div class="container__result"></div>
     </div>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
