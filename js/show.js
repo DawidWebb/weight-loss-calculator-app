@@ -1,6 +1,10 @@
-const showValue = ()=>{
-console.log('show');
+import Count from './Count.js'
 
-
+class ShowValue extends Count{
+    constructor(props){
+        super(props)
+    }
 }
-export default showValue
+
+
+export default ShowValue
