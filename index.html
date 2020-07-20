@@ -1,82 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weight lose App</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="container__title">Weight loss calculator</h1>
-      <div class="setup container__setup">
-        <div class="setup__initial">
-          <p class="setup__title">Initial weight</p>
-          <input
-            class="setup__input setup__input--initial"
-            type="range"
-            min="1"
-            max="160"
-            step="1"
-            value="80"
-          />
-          <p class="setup__value setup__value--initial">114kg</p>
-        </div>
-        <div class="setup__desired">
-          <p class="setup__title">Desired weight</p>
-          <input
-          type="range"
-          value="80"
-            class="setup__input setup__input--desired"
-            min="1"
-            max="160"
-            step="1"
-            
-          />
-          <p class="setup__value setup__value--desired">95kg</p>
-        </div>
-        <div class="setup__height">
-          <p class="setup__title">Height</p>
-          <input
-            class="setup__input setup__input--height"
-            type="range"
-            min="1"
-            max="225"
-            step="1"
-            value="80"
-          />
-          <p class="setup__value setup__value--height">184cm</p>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weight lose App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="container__title">Weight loss calculator</h1>
+    <div class="setup container__setup">
+      <div class="setup__initial">
+        <p class="setup__title">Initial weight</p>
+        <input class="setup__input setup__input--initial" type="range" min="1" max="160" step="1" value="80" />
+        <p class="setup__value setup__value--initial">114kg</p>
       </div>
-      <div class="calendar container__calendar">
-        <div class="calendar__start">
-          <p class="calendar__title">Start date</p>
-          <input
-            class="calendar__date calendar__date--start"
-            type="date"
-            name="start"
-            min="2020-07-01"
-            max="2021-12-31"
-          />
-        </div>
-        <div class="calendar__end">
-          <p class="calendar__title">End date</p>
-          <input
-            class="calendar__date calendar__date--end"
-            type="date"
-            name="end"
-            min="2020-07-01"
-            max="2021-12-31"
-          />
-        </div>
+      <div class="setup__desired">
+        <p class="setup__title">Desired weight</p>
+        <input type="range" value="80" class="setup__input setup__input--desired" min="1" max="160" step="1" />
+        <p class="setup__value setup__value--desired">95kg</p>
       </div>
-      <button class="container__button">Count</button>
-      <div class="container__result"></div>
+      <div class="setup__height">
+        <p class="setup__title">Height</p>
+        <input class="setup__input setup__input--height" type="range" min="1" max="225" step="1" value="160" />
+        <p class="setup__value setup__value--height">184cm</p>
+      </div>
     </div>
-    <script src="./js/index.js" type="module"></script>
-  </body>
+    <div class="calendar container__calendar">
+      <div class="calendar__start">
+        <p class="calendar__title">Start date</p>
+        <input class="calendar__date calendar__date--start" type="date" name="start" min="2020-07-01"
+          max="2021-12-31" />
+      </div>
+      <div class="calendar__end">
+        <p class="calendar__title">End date</p>
+        <input class="calendar__date calendar__date--end" type="date" name="end" min="2020-07-01" max="2021-12-31" />
+      </div>
+    </div>
+    <button class="container__button">Count</button>
+    <div class="container__result"></div>
+  </div>
+  <script src="./js/index.js" type="module"></script>
+</body>
+
 </html>
